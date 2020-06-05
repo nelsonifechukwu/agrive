@@ -2,7 +2,7 @@
 
 		require_once('connections/connections.php');
 
-		$api_key = "Some random string";
+		$api_key = "tPmAT5Ab3j7F9";
 
 		if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
