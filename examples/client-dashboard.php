@@ -1,9 +1,26 @@
 <?php
 require_once('../backend/header-client.php');
 require_once('../backend/sensor_values.php');
+require_once('../backend/refresh_time.php');
+$page = $_SERVER['PHP_SELF'];
+$sec = $display_refresh_time;
 ?>
 
+<p><?php echo "Refresh Time: ".$sec ." seconds"; ?></p>
 
+<form method="post" action="">
+<label>Choose Refresh Time</label>
+<select name="refresh_time">
+<option value="0">Don't refresh</option>
+<option value="10">Every 10 seconds</option>
+<option value="30">Every 30 seconds</option>
+<option value="60">Every 1 minute</option>
+<option value="300">Every 5 minutes</option>
+<option value="600">Every 10 minutes</option>
+</select>
+<button name="save_refresh_time" type="submit">Save</button>
+
+</form>
 <!--
 =========================================================
 * * Black Dashboard - v1.0.1
@@ -27,6 +44,14 @@ require_once('../backend/sensor_values.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <?php
+  if($sec != '0'){
+     echo"<meta http-equiv='refresh' content='".$sec."' URL='". $page."'>";
+  }
+
+  ?>
+
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
   <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.png" />
   <title>
