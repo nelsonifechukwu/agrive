@@ -6,7 +6,7 @@ $page = $_SERVER['PHP_SELF'];
 $sec = $display_refresh_time;
 ?>
 
-<p><?php echo "Refresh Time: ".$sec ." seconds"; ?></p>
+<!-- <p><?php echo "Refresh Time: ".$sec ." seconds"; ?></p>
 
 <form method="post" action="">
 <label>Choose Refresh Time</label>
@@ -20,7 +20,7 @@ $sec = $display_refresh_time;
 </select>
 <button name="save_refresh_time" type="submit">Save</button>
 
-</form>
+</form> -->
 <!--
 =========================================================
 * * Black Dashboard - v1.0.1
@@ -45,12 +45,12 @@ $sec = $display_refresh_time;
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <?php
+  <!-- <?php
   if($sec != '0'){
      echo"<meta http-equiv='refresh' content='".$sec."' URL='". $page."'>";
   }
 
-  ?>
+  ?> -->
 
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
   <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.png" />

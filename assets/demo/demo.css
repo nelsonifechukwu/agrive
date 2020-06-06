@@ -7,6 +7,15 @@
 	font-family: Metropolis;
   src: url(../fonts/Metropolis-Medium.otf);
 }
+@font-face{
+	font-family: Gilroy;
+	src: url(../fonts/Gilroy-ExtraBold.otf);
+	font-weight: bold;
+}
+@font-face{
+	font-family: Gilroy;
+  src: url(../fonts/Gilroy-Light.otf);
+}
 
 .tim-row {
 	margin-bottom: 20px;
@@ -82,6 +91,10 @@ p{
 	font-family: 'Metropolis', sans-serif;
 }
 
+.white-content{
+	font-family: 'Gilroy',sans-serif;
+}
+
 .main {
 	width: 100%;
 	height: 100vh;
@@ -91,6 +104,12 @@ p{
 .main-content {
 	height: 80%;
 }
+
+.main-content-display{
+	font-family: 'Gilroy', sans-serif;
+	font-weight: bold;
+}
+
 
 .btn-outline-light {
 	border: 1px solid #ffffff;

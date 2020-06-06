@@ -79,7 +79,7 @@
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<div class="display-text">
-							<h1 class="display-1 text-white">
+							<h1 class="display-1 text-white main-content-display">
 								Let's make farming easier!
 							</h1>
 							<p class="lead text-white mb-3">
