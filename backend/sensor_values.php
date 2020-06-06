@@ -1,7 +1,7 @@
 <?php
 	require_once('connections/connections.php');
 
-	$records = "SELECT * FROM `farm_conditions` WHERE `farm_id` = '2' ORDER BY `id` DESC";
+	$records = "SELECT * FROM `farm_conditions` WHERE `farm_id` = '2' ORDER BY `id` DESC limit 40";
 	$get_records = mysqli_query($con, $records);
 
 	if($get_records){
@@ -24,6 +24,11 @@ foreach ($readings_time as $reading){
     //$readings_time[$i] = date("Y-m-d H:i:s", strtotime("$reading + 4 hours"));
     $i += 1;
 }*/
+$temperature_array = array_reverse(array_column($sensor_data, 'temperature'));
+$humidity_array = array_reverse(array_column($sensor_data, 'humidity'));
+$light_intensity_array = array_reverse(array_column($sensor_data, 'light_intensity'));
+$soil_moisture_array = array_reverse(array_column($sensor_data, 'soil_moisture'));
+$pressure_array = array_reverse(array_column($sensor_data, 'pressure'));
 
 $temperature = json_encode(array_reverse(array_column($sensor_data, 'temperature')), JSON_NUMERIC_CHECK);
 $humidity = json_encode(array_reverse(array_column($sensor_data, 'humidity')), JSON_NUMERIC_CHECK);

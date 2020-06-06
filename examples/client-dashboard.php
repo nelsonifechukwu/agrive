@@ -1,12 +1,10 @@
 <?php
 require_once('../backend/header-client.php');
 require_once('../backend/sensor_values.php');
-require_once('../backend/refresh_time.php');
 $page = $_SERVER['PHP_SELF'];
-$sec = $display_refresh_time;
 ?>
 
-<!-- <p><?php echo "Refresh Time: ".$sec ." seconds"; ?></p>
+<!--
 
 <form method="post" action="">
 <label>Choose Refresh Time</label>
@@ -44,13 +42,7 @@ $sec = $display_refresh_time;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- <?php
-  if($sec != '0'){
-     echo"<meta http-equiv='refresh' content='".$sec."' URL='". $page."'>";
-  }
-
-  ?> -->
+  <meta http-equiv='refresh' content='15' URL='<?php echo $page; ?>'>
 
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
   <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.png" />
@@ -235,7 +227,8 @@ $sec = $display_refresh_time;
                 <div class="row">
                   <div class="col-sm-6 text-left">
                     <h5 class="card-category">Temperature</h5>
-                    <h2 class="card-title text-danger font-weight-bold"><span id="tempValue">35</span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
+                    <h2 class="card-title text-danger font-weight-bold">
+                      <span id="tempValue"><?php echo end($temperature_array); ?></span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
                   </div>
                   <div class="col-sm-6">
                     <!-- <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
@@ -277,7 +270,7 @@ $sec = $display_refresh_time;
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Humidity</h5>
-                <h3 class="card-title text-info font-weight-bold"><span id="humidityValue">80</span>%</h3>  <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE HUMIDITY GRAPH-->
+                <h3 class="card-title text-info font-weight-bold"><span id="humidityValue"><?php echo end($humidity_array); ?></span>%</h3>  <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE HUMIDITY GRAPH-->
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -290,7 +283,7 @@ $sec = $display_refresh_time;
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Light Intensity</h5>
-                <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue">200</span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
+                <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue"><?php echo end($light_intensity_array); ?></span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -305,7 +298,7 @@ $sec = $display_refresh_time;
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Soil Moisture</h5>
-                <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue">80</span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
+                <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue"><?php echo end($soil_moisture_array); ?></span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -318,7 +311,7 @@ $sec = $display_refresh_time;
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Pressure</h5>
-                <h3 class="card-title text-default font-weight-bold"><span id="pressureValue">720</span>mmHg</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
+                <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>mmHg</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
               </div>
               <div class="card-body">
                 <div class="chart-area">
