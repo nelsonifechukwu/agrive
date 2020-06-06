@@ -1,9 +1,8 @@
 <?php
-
 $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "hackathon"; 	
+$username = "symmetri_user";
+$password = "jerrymanlim.";
+$database = "symmetri_hackathon"; 	
 // Create connection
 $con = mysqli_connect($servername, $username, $password, $database);
 
