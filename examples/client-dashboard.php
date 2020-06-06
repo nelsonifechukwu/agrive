@@ -45,7 +45,7 @@ $page = $_SERVER['PHP_SELF'];
   <meta http-equiv='refresh' content='15' URL='<?php echo $page; ?>'>
 
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
-  <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.png" />
+  <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.svg" />
   <title>
     Agrive | Dashboard
   </title>
@@ -311,7 +311,7 @@ $page = $_SERVER['PHP_SELF'];
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Pressure</h5>
-                <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>mmHg</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
+                <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>Pa</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -674,8 +674,8 @@ $page = $_SERVER['PHP_SELF'];
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              2018 made with <i class="tim-icons icon-heart-2"></i> by
-              <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+               made with <i class="tim-icons icon-heart-2"></i> by the
+              <a href="javascript:void(0)" target="_blank">WeSolve</a> team for a better web.
             </div>
           </div>
         </footer>

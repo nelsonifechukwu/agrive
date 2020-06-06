@@ -27,7 +27,7 @@ include('../backend/create_farm.php');
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.png">
+  <link rel="icon" type="image/png" href="../assets/img/agrive-favicon.svg">
   <title>
   Agrive | Add farm
   </title>
@@ -263,7 +263,7 @@ include('../backend/create_farm.php');
       </div>
       <footer class="footer">
         <div class="container-fluid">
-          <ul class="nav">
+          <!-- <ul class="nav">
             <li class="nav-item">
               <a href="javascript:void(0)" class="nav-link">
                 Creative Tim
@@ -279,13 +279,13 @@ include('../backend/create_farm.php');
                 Blog
               </a>
             </li>
-          </ul>
+          </ul> -->
           <div class="copyright">
             ©
             <script>
               document.write(new Date().getFullYear())
-            </script>2018 made with <i class="tim-icons icon-heart-2"></i> by
-            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+            </script> made with <i class="tim-icons icon-heart-2"></i> by the
+            <a href="javascript:void(0)" target="_blank">WeSolve</a> team for a better world.
           </div>
         </div>
       </footer>
@@ -314,7 +314,7 @@ include('../backend/create_farm.php');
           <span class="badge dark-badge ml-2"></span>
           <span class="color-label">DARK MODE</span>
         </li>
-        <li class="button-container">
+        <!-- <li class="button-container">
           <a href="https://www.creative-tim.com/product/black-dashboard" target="_blank"
             class="btn btn-primary btn-block btn-round">Download Now</a>
           <a href="https://demos.creative-tim.com/black-dashboard/docs/1.0/getting-started/introduction.html"
@@ -331,7 +331,7 @@ include('../backend/create_farm.php');
           <a class="github-button" href="https://github.com/creativetimofficial/black-dashboard"
             data-icon="octicon-star" data-size="large" data-show-count="true"
             aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
