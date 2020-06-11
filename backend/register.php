@@ -45,7 +45,7 @@ HASH THE PASWORDS
 
  			if($save_user){
 
- 				echo "<script type='text/javascript'>alert('You have successfully registered!')</script>";
+ 				echo "<script type='text/javascript'>alert('Registration Successful! Login now!')</script>";
  			}
 
  		}
