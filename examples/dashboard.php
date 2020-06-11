@@ -669,8 +669,8 @@ require_once('../backend/header-admin.php');
 							<script>
 								document.write(new Date().getFullYear());
 							</script>
-							2018 made with <i class="tim-icons icon-heart-2"></i> by
-							<a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+							2018 made with <i class="tim-icons icon-heart-2"></i> by the
+							<a href="javascript:void(0)" target="_blank">WeSolve</a> team for a better web.
 						</div>
 					</div>
 				</footer>
@@ -699,7 +699,7 @@ require_once('../backend/header-admin.php');
 						<span class="badge dark-badge ml-2"></span>
 						<span class="color-label">DARK MODE</span>
 					</li>
-					<li class="button-container">
+					<!-- <li class="button-container">
 						<a
 							href="https://www.creative-tim.com/product/black-dashboard"
 							target="_blank"
@@ -729,7 +729,7 @@ require_once('../backend/header-admin.php');
 							aria-label="Star ntkme/github-buttons on GitHub"
 							>Star</a
 						>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>

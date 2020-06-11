@@ -87,7 +87,7 @@ require_once('../backend/header-admin.php');
             </a>
           </li> -->
           <!-- <li>
-            <a href="./user.html">
+            <a href="./clients.html">
               <i class="tim-icons icon-single-02"></i>
               <p>User Profile</p>
             </a>
@@ -391,8 +391,8 @@ require_once('../backend/header-admin.php');
             ©
             <script>
               document.write(new Date().getFullYear())
-            </script> made with <i class="tim-icons icon-heart-2"></i> by
-            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+            </script> made with <i class="tim-icons icon-heart-2"></i> by the
+            <a href="javascript:void(0)" target="_blank">WeSolve</a> team for a better web.
           </div>
         </div>
       </footer>
@@ -421,7 +421,7 @@ require_once('../backend/header-admin.php');
           <span class="badge dark-badge ml-2"></span>
           <span class="color-label">DARK MODE</span>
         </li>
-        <li class="button-container">
+        <!-- <li class="button-container">
           <a href="https://www.creative-tim.com/product/black-dashboard" target="_blank" class="btn btn-primary btn-block btn-round">Download Now</a>
           <a href="https://demos.creative-tim.com/black-dashboard/docs/1.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block btn-round">
             Documentation
@@ -434,7 +434,7 @@ require_once('../backend/header-admin.php');
           <br>
           <br>
           <a class="github-button" href="https://github.com/creativetimofficial/black-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
