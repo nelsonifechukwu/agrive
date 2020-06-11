@@ -260,6 +260,124 @@ include('../backend/create_farm.php');
           </div>
           
         </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <form method="post" action="">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="title">Set farm varibles</h5>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div>
+                    <h4>Temperature</h4>
+                    <div class="row">
+                      <div class=" col-6 col-md-5">
+                        <div class="form-group">
+                          <label>Min value</label>
+                          <input type="number" class="form-control" name="tempGraphMin" id="tempGraphMin" placeholder="Min"
+                            >
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-5 ml-auto">
+                        <div class="form-group">
+                          <label>Max value</label>
+                          <input type="number" class="form-control" name="tempGraphMax" id="tempGraphMax" placeholder="Max"
+                            >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Humidity</h4>
+                    <div class="row">
+                      <div class=" col-6 col-md-5">
+                        <div class="form-group">
+                          <label>Min value</label>
+                          <input type="number" class="form-control" name="humidityGraphMin" id="humidityGraphMin" placeholder="Min"
+                            >
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-5 ml-auto">
+                        <div class="form-group">
+                          <label>Max value</label>
+                          <input type="number" class="form-control" name="humidityGraphMax" id="humidityGraphMax" placeholder="Max"
+                            >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Light Intensity</h4>
+                    <div class="row">
+                      <div class=" col-6 col-md-5">
+                        <div class="form-group">
+                          <label>Min value</label>
+                          <input type="number" class="form-control" name="lightIntensityGraphMin" id="lightIntensityGraphMin" placeholder="Min"
+                            >
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-5 ml-auto">
+                        <div class="form-group">
+                          <label>Max value</label>
+                          <input type="number" class="form-control" name="lightIntensityGraphMax" id="lightIntensityGraphMax" placeholder="Max"
+                            >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Soil Moisture</h4>
+                    <div class="row">
+                      <div class=" col-6 col-md-5">
+                        <div class="form-group">
+                          <label>Min value</label>
+                          <input type="number" class="form-control" name="soilMoistureGraphMin" id="soilMoistureGraphMin" placeholder="Min"
+                            >
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-5 ml-auto">
+                        <div class="form-group">
+                          <label>Max value</label>
+                          <input type="number" class="form-control" name="soilMoistureGraphMax" id="soilMoistureGraphMax" placeholder="Max"
+                            >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Pressure</h4>
+                    <div class="row">
+                      <div class=" col-6 col-md-5">
+                        <div class="form-group">
+                          <label>Min value</label>
+                          <input type="number" class="form-control" name="pressureGraphMin" id="pressureGraphMin" placeholder="Min"
+                            >
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-5 ml-auto">
+                        <div class="form-group">
+                          <label>Max value</label>
+                          <input type="number" class="form-control" name="pressureGraphMax" id="pressureGraphMax" placeholder="Max"
+                            >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                
+                  
+                </form>
+              </div>
+              <div class="card-footer">
+                <button type="submit" name="create_farm" class="btn btn-fill btn-primary">Add</button>
+              </div>
+            </div>
+          </form>
+          </div>
+          
+        </div>
       </div>
       <footer class="footer">
         <div class="container-fluid">

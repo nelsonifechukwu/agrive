@@ -224,13 +224,13 @@ $page = $_SERVER['PHP_SELF'];
           <div class="col-12">
             <div class="card card-chart">
               <div class="card-header">
-                <div class="row">
-                  <div class="col-sm-6 text-left">
-                    <h5 class="card-category">Temperature</h5>
-                    <h2 class="card-title text-danger font-weight-bold">
-                      <span id="tempValue"><?php echo end($temperature_array); ?></span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
-                  </div>
-                  <div class="col-sm-6">
+                <h5 class="card-category">Temperature</h5>
+                <div class="row container">
+                  <h2 class="card-title text-danger font-weight-bold">
+                    <span id="tempValue"><?php echo end($temperature_array); ?></span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="temperatureStatus">Good</span></h4>
+                </div>
+                  <!-- <div class="col-sm-6">
                     <!-- <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
 												<label class="btn btn-sm btn-primary btn-simple active" id="0">
 													<input type="radio" name="options" checked />
@@ -253,9 +253,8 @@ $page = $_SERVER['PHP_SELF'];
 														<i class="tim-icons icon-tap-02"></i>
 													</span>
 												</label>
-											</div> -->
-                  </div>
-                </div>
+											</div>
+                  </div> -->
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -270,7 +269,17 @@ $page = $_SERVER['PHP_SELF'];
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Humidity</h5>
-                <h3 class="card-title text-info font-weight-bold"><span id="humidityValue"><?php echo end($humidity_array); ?></span>%</h3>  <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE HUMIDITY GRAPH-->
+                <div class="row container">
+                  <h3 class="card-title text-info font-weight-bold"><span id="humidityValue"><?php echo end($humidity_array); ?></span>%</h3>  <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE HUMIDITY GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="humidityStatus">Good</span></h4>
+                  <!-- The above h4 tag is the status tag. Depending on the current value and its comparison with the set ones, there will nbe three states.
+                    # Good- give the h4 a class of "text-success" and change the text accordingly
+                    #Too low - give the h4 a class of "text-danger" and change the text accordingly
+                    #Too High - also give the h4 a class of "text-danger" and change the text accordingly
+                    
+                   The same applies to other graphs too 
+                  -->
+                </div>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -283,7 +292,10 @@ $page = $_SERVER['PHP_SELF'];
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Light Intensity</h5>
-                <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue"><?php echo end($light_intensity_array); ?></span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
+                <div class="row container">
+                  <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue"><?php echo end($light_intensity_array); ?></span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="lightIntensityStatus">Good</span></h4>
+                </div>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -298,7 +310,10 @@ $page = $_SERVER['PHP_SELF'];
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Soil Moisture</h5>
-                <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue"><?php echo end($soil_moisture_array); ?></span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
+                <div class="row container">
+                  <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue"><?php echo end($soil_moisture_array); ?></span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="soilMoistureStatus">Good</span></h4>
+                </div>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -311,7 +326,10 @@ $page = $_SERVER['PHP_SELF'];
             <div class="card card-chart">
               <div class="card-header">
                 <h5 class="card-category">Pressure</h5>
-                <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>Pa</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
+                <div class="row container">
+                  <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>Pa</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="pressureStatus">Good</span></h4>
+                </div>
               </div>
               <div class="card-body">
                 <div class="chart-area">
