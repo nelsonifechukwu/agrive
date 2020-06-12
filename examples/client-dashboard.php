@@ -230,6 +230,10 @@ $page = $_SERVER['PHP_SELF'];
                     <span id="tempValue"><?php echo end($temperature_array); ?></span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
                   <h4 class="ml-auto text-muted">Status: <span id="temperatureStatus">Good</span></h4>
                 </div>
+                <div class="row container">
+                  <h4 class="text-danger">Normal range: <span id="tempMinValue">35</span>&#176;C - <span id="tempMaxValue">37</span>&#176;C
+                  </h4>
+                </div>
                   <!-- <div class="col-sm-6">
                     <!-- <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
 												<label class="btn btn-sm btn-primary btn-simple active" id="0">
@@ -277,8 +281,12 @@ $page = $_SERVER['PHP_SELF'];
                     #Too low - give the h4 a class of "text-danger" and change the text accordingly
                     #Too High - also give the h4 a class of "text-danger" and change the text accordingly
                     
-                   The same applies to other graphs too 
+                   The same applies to other graphs 
                   -->
+                </div>
+                <div class="row container">
+                  <h4 class="text-info">Normal range: <span id="humidityMinValue">65</span>% - <span id="humidityMaxValue">80</span>%
+                  </h4>
                 </div>
               </div>
               <div class="card-body">
@@ -295,6 +303,10 @@ $page = $_SERVER['PHP_SELF'];
                 <div class="row container">
                   <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue"><?php echo end($light_intensity_array); ?></span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
                   <h4 class="ml-auto text-muted">Status: <span id="lightIntensityStatus">Good</span></h4>
+                </div>
+                <div class="row container">
+                  <h4 class="text-warning">Normal range: <span id="lightIntesityMinValue">100</span>cd - <span id="lightIntesityMaxValue">120</span>cd
+                  </h4>
                 </div>
               </div>
               <div class="card-body">
@@ -314,6 +326,10 @@ $page = $_SERVER['PHP_SELF'];
                   <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue"><?php echo end($soil_moisture_array); ?></span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
                   <h4 class="ml-auto text-muted">Status: <span id="soilMoistureStatus">Good</span></h4>
                 </div>
+                <div class="row container">
+                  <h4 class="text-primary">Normal range: <span id="soilMoistureMinValue">65</span>% - <span id="soilMoistureMaxValue">80</span>%
+                  </h4>
+                </div>
               </div>
               <div class="card-body">
                 <div class="chart-area">
@@ -329,6 +345,10 @@ $page = $_SERVER['PHP_SELF'];
                 <div class="row container">
                   <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>Pa</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
                   <h4 class="ml-auto text-muted">Status: <span id="pressureStatus">Good</span></h4>
+                </div>
+                <div class="row container">
+                  <h4 class="text-default">Normal range: <span id="pressureMinValue">65</span>Pa - <span id="pressureMaxValue">80</span>Pa
+                  </h4>
                 </div>
               </div>
               <div class="card-body">
