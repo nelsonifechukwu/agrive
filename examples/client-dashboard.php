@@ -5,21 +5,6 @@ $page = $_SERVER['PHP_SELF'];
 ?>
 
 <!--
-
-<form method="post" action="">
-<label>Choose Refresh Time</label>
-<select name="refresh_time">
-<option value="0">Don't refresh</option>
-<option value="10">Every 10 seconds</option>
-<option value="30">Every 30 seconds</option>
-<option value="60">Every 1 minute</option>
-<option value="300">Every 5 minutes</option>
-<option value="600">Every 10 minutes</option>
-</select>
-<button name="save_refresh_time" type="submit">Save</button>
-
-</form> -->
-<!--
 =========================================================
 * * Black Dashboard - v1.0.1
 =========================================================
@@ -227,11 +212,13 @@ $page = $_SERVER['PHP_SELF'];
                 <h5 class="card-category">Temperature</h5>
                 <div class="row container">
                   <h2 class="card-title text-danger font-weight-bold">
-                    <span id="tempValue"><?php echo end($temperature_array); ?></span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
-                  <h4 class="ml-auto text-muted">Status: <span id="temperatureStatus">Good</span></h4>
+                    <span id="tempValue"><?php echo $current_temperature; ?></span>&#176;C</h2> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE TEMPERATURE GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="temperatureStatus" class = "<?php echo $temperature_class; ?>"><?php echo $temperature_status; ?></span></h4>
                 </div>
                 <div class="row container">
-                  <h4 class="text-danger">Normal range: <span id="tempMinValue">35</span>&#176;C - <span id="tempMaxValue">37</span>&#176;C
+                  <h4 class="text-danger">Normal range: 
+                      <span id="tempMinValue"><?php echo $min_temperature; ?></span>&#176;C - 
+                      <span id="tempMaxValue"><?php echo $max_temperature; ?></span>&#176;C
                   </h4>
                 </div>
                   <!-- <div class="col-sm-6">
@@ -274,8 +261,8 @@ $page = $_SERVER['PHP_SELF'];
               <div class="card-header">
                 <h5 class="card-category">Humidity</h5>
                 <div class="row container">
-                  <h3 class="card-title text-info font-weight-bold"><span id="humidityValue"><?php echo end($humidity_array); ?></span>%</h3>  <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE HUMIDITY GRAPH-->
-                  <h4 class="ml-auto text-muted">Status: <span id="humidityStatus">Good</span></h4>
+                  <h3 class="card-title text-info font-weight-bold"><span id="humidityValue"><?php echo $current_humidity; ?></span>%</h3>  <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE HUMIDITY GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="humidityStatus" class="<?php echo $humidity_class; ?>"><?php echo $humidity_status; ?></span></h4>
                   <!-- The above h4 tag is the status tag. Depending on the current value and its comparison with the set ones, there will nbe three states.
                     # Good- give the h4 a class of "text-success" and change the text accordingly
                     #Too low - give the h4 a class of "text-danger" and change the text accordingly
@@ -285,7 +272,7 @@ $page = $_SERVER['PHP_SELF'];
                   -->
                 </div>
                 <div class="row container">
-                  <h4 class="text-info">Normal range: <span id="humidityMinValue">65</span>% - <span id="humidityMaxValue">80</span>%
+                  <h4 class="text-info">Normal range: <span id="humidityMinValue"><?php echo $min_humidity; ?></span>% - <span id="humidityMaxValue"><?php echo $max_humidity; ?></span>%
                   </h4>
                 </div>
               </div>
@@ -301,11 +288,11 @@ $page = $_SERVER['PHP_SELF'];
               <div class="card-header">
                 <h5 class="card-category">Light Intensity</h5>
                 <div class="row container">
-                  <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue"><?php echo end($light_intensity_array); ?></span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
-                  <h4 class="ml-auto text-muted">Status: <span id="lightIntensityStatus">Good</span></h4>
+                  <h3 class="card-title text-warning font-weight-bold"><span id="lightIntensityValue"><?php echo $current_light_intensity; ?></span>cd</h3> <!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE LIGHT INTENSITY GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="lightIntensityStatus" class="<?php echo $light_intensity_class; ?>"><?php echo $light_intensity_status; ?></span></h4>
                 </div>
                 <div class="row container">
-                  <h4 class="text-warning">Normal range: <span id="lightIntesityMinValue">100</span>cd - <span id="lightIntesityMaxValue">120</span>cd
+                  <h4 class="text-warning">Normal range: <span id="lightIntesityMinValue"><?php echo $min_light_intensity; ?></span>cd - <span id="lightIntesityMaxValue"><?php echo $max_light_intensity; ?></span>cd
                   </h4>
                 </div>
               </div>
@@ -323,11 +310,11 @@ $page = $_SERVER['PHP_SELF'];
               <div class="card-header">
                 <h5 class="card-category">Soil Moisture</h5>
                 <div class="row container">
-                  <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue"><?php echo end($soil_moisture_array); ?></span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
-                  <h4 class="ml-auto text-muted">Status: <span id="soilMoistureStatus">Good</span></h4>
+                  <h3 class="card-title text-primary font-weight-bold"><span id="soilMoistureValue"><?php echo $current_soil_moisture; ?></span>%</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE SOIL MOISTURE GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="soilMoistureStatus" class="<?php echo $soil_moisture_class; ?>"><?php echo $soil_moisture_status; ?></span></h4>
                 </div>
                 <div class="row container">
-                  <h4 class="text-primary">Normal range: <span id="soilMoistureMinValue">65</span>% - <span id="soilMoistureMaxValue">80</span>%
+                  <h4 class="text-primary">Normal range: <span id="soilMoistureMinValue"><?php echo $min_soil_moisture; ?></span>% - <span id="soilMoistureMaxValue"><?php echo $max_soil_moisture; ?></span>%
                   </h4>
                 </div>
               </div>
@@ -343,11 +330,11 @@ $page = $_SERVER['PHP_SELF'];
               <div class="card-header">
                 <h5 class="card-category">Pressure</h5>
                 <div class="row container">
-                  <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo end($pressure_array); ?></span>Pa</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
-                  <h4 class="ml-auto text-muted">Status: <span id="pressureStatus">Good</span></h4>
+                  <h3 class="card-title text-default font-weight-bold"><span id="pressureValue"><?php echo $current_pressure ?></span>Pa</h3><!--THIS H TAG WILL SHOW THE MOST CURRENT VALUE OF THE PRESSURE GRAPH-->
+                  <h4 class="ml-auto text-muted">Status: <span id="pressureStatus" class="<?php echo $pressure_class; ?>"><?php echo $pressure_status; ?></span></h4>
                 </div>
                 <div class="row container">
-                  <h4 class="text-default">Normal range: <span id="pressureMinValue">65</span>Pa - <span id="pressureMaxValue">80</span>Pa
+                  <h4 class="text-default">Normal range: <span id="pressureMinValue"><?php echo $min_pressure; ?></span>Pa - <span id="pressureMaxValue"><?php echo $max_pressure; ?></span>Pa
                   </h4>
                 </div>
               </div>
