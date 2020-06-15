@@ -713,7 +713,7 @@ $page = $_SERVER['PHP_SELF'];
                 document.write(new Date().getFullYear());
               </script>
                made with <i class="tim-icons icon-heart-2"></i> by the
-              <a href="javascript:void(0)" target="_blank">WeSolve</a> team for a better web.
+              <a href="javascript:void(0)" target="_blank">WeSolve</a> team for a better world.
             </div>
           </div>
         </footer>
