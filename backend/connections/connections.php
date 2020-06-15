@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "symmetri_user";
 $password = "jerrymanlim.";
-$database = "symmetri_hackathon"; 	
+$database = "symmetri_hackathon"; 
 // Create connection
 $con = mysqli_connect($servername, $username, $password, $database);
 
