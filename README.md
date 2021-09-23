@@ -15,4 +15,13 @@ Our robust hardware and software systems analyze the numerous data collated from
 - Check necessary connections @ https://randomnerdtutorials.com/build-an-all-in-one-esp32-weather-station-shield/
 - Edit connections to your taste and update code @ Greenhouse.ino
 - Upload the arduino file into your ESP32/ ESP8266 hardware.
-- Make the connections to the web-server
+
++ Make the connections to the web-server
+ - Create a profile @ 000webhost
+ - Upload the scripts @ /backend to the file manager
+ - Set up database and import the file @ /backend/symmetri_hackathon
+ - launch the website
+ 
+ # Effect
+ 
+ After configuration, you should be able to visualize your sensor readings measuring your farm environmental factors from anywhere in the world.
