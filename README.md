@@ -1,20 +1,18 @@
-# agrive
-What do you know about the conventional farm?
+# Agrive
 
-It’s almost the same as the primitive times. Nothing has really changed except with additional mechanized equipment. Farmers still make speculated guesses on when to sow, when to harvest, amount of harvest, good conditions, and seasons to sow, all these are but a few shows how uninformed and ignorant farmers are about their farm processes.
-f you could optimize all these processes. Extract maximum produce from all these and ensure an ideal farm.
+![IMAGE 2021-09-23 16:34:16](https://user-images.githubusercontent.com/44223263/134537230-d0a2eb24-928f-4c5c-a644-51d49360dd21.jpg)
 
-What then is Agrive?
 
-It is this simple. You make data-driven decisions on your farm as it is being monitored by Agrive's resource.
+This is this simple project that helps you make data-driven decisions on your farm as it is being monitored by Agrive's resource.
 
 How do we tackle this at Agrive?
 
 Our robust hardware and software systems analyze the numerous data collated from your farm and provide the farmer with decisions to execute to ensure optimal yield and farming efficiency. Note that this is a regular procedure present in the market.
 
 
-**EXECUTIONS**
 
-
+# Run
+- Check necessary connections @ https://randomnerdtutorials.com/build-an-all-in-one-esp32-weather-station-shield/
+- Edit connections to your taste and update code 
 - Upload the arduino file into your ESP32/ ESP8266 hardware.
 - Make the connections to the web-server
