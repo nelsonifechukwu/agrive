@@ -13,6 +13,6 @@ Our robust hardware and software systems analyze the numerous data collated from
 
 # Run
 - Check necessary connections @ https://randomnerdtutorials.com/build-an-all-in-one-esp32-weather-station-shield/
-- Edit connections to your taste and update code 
+- Edit connections to your taste and update code @ Greenhouse.ino
 - Upload the arduino file into your ESP32/ ESP8266 hardware.
 - Make the connections to the web-server
