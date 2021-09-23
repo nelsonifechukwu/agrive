@@ -1,3 +1,5 @@
+//Press Ctrl + F and Search for ***
+//UPDATE *** with relevant Information
 
 #ifdef ESP32
   #include <WiFi.h>
@@ -11,11 +13,11 @@
 
 
 // Replace with your network credentials
-const char* ssid     = "TECNO P904";
-const char* password = "arsenal21";
+const char* ssid     = "***";
+const char* password = "***";
 
 // REPLACE with your Domain name and URL path or IP address with path
-const char* serverName = "http://symmetrical-happiness.com/agrive/backend/sensor_post.php";
+const char* serverName = "***/backend/sensor_post.php";
 
 // Keep this API Key value to be compatible with the PHP code provided in the project page. 
 // If you change the apiKeyValue value, the PHP file /post-data.php also needs to have the same key 
